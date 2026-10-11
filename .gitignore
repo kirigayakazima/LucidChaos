@@ -1,0 +1,40 @@
+# Confidential & Internal Docs
+docs/
+poc/
+chaos_bot_design_spec.md
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+build/
+dist/
+
+# Binary & Package
+*.apk
+
+# Logs & Diagnostics
+*.log
+logs/
+logs_archive/
+debug/
+diag_out/
+diag_out_probe/
+fixtures_auto/
+
+# Temporary / Scratch debug captures
+debug_*.png
+test_bg_cap.png
+
+# IDE & OS
+.idea/
+.vscode/
+*.swp
+*.swo
+Thumbs.db
+Desktop.ini

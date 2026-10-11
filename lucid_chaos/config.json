@@ -1,0 +1,86 @@
+{
+  "mode": "system_zero",
+  "overlay": {
+    "enabled": true
+  },
+  "window": {
+    "title": "卡厄思梦境",
+    "process_name": "ssr-stove-shield.exe"
+  },
+  "system_zero": {
+    "target_codex": 1,
+    "event_only": true,
+    "_note": "target_codex: 1=01号法典, 2=02号法典, 3=03号法典"
+  },
+  "main_story": {
+    "auto_skip_dialog": true,
+    "boss_action": "auto",
+    "_boss_action_note": "pause=首领战交给主人手动；auto=脚本用编号键出牌+E结束回合接管（BOSS战原生AUTO被游戏锁掉）",
+    "auto_speed": true
+  },
+  "reroll": {
+    "enable_reroll": false,
+    "target_cards": [
+      "连结结晶",
+      "软软★技能"
+    ],
+    "target_equipments": [
+      "贪食燕尾服"
+    ],
+    "max_retries": 50
+  },
+  "path_planning": {
+    "preference": "non_battle",
+    "shop_auto_buy": true,
+    "shop_auto_delete_card": true
+  },
+  "card_reward": {
+    "skip_neutral_cards": true,
+    "_note": "凡是中立卡牌奖励一律按F1跳过，不保存至角色卡组"
+  },
+  "camp": {
+    "preferred_action": "training",
+    "low_hp_threshold": 0.3,
+    "low_hp_action": "rest"
+  },
+  "dungeon": {
+    "stop_at": "none",
+    "stop_action": "continue"
+  },
+  "archive": {
+    "keep_main_clean_save": true,
+    "delete_support_clean_save": true,
+    "use_travel_ticket": true
+  },
+  "system": {
+    "background_mode": true,
+    "ocr_confidence": 0.85,
+    "action_delay_multiplier": 1.0,
+    "watchdog_timeout_seconds": 45
+  },
+  "logging": {
+    "max_runs": 3,
+    "max_lines_per_run": 200
+  },
+  "classification": {
+    "authority": "observer"
+  },
+  "input": {
+    "digit_press_times": 2,
+    "_note": "数字键'选择'类动作按几下：主人实测事件选项/出牌都要按两下(选中+确认)"
+  },
+  "debug": {
+    "collect_fixtures": true,
+    "max_fixtures": 16,
+    "stuck_threshold": 4,
+    "stuck_guard": {
+      "enabled": true,
+      "warn": 4,
+      "esc": 6,
+      "close": 9,
+      "stop": 14,
+      "repeat_action_limit": 3,
+      "_note": "warn=报警并清判定粘连; esc=按ESC; close=ESC+点关闭区域; stop=安全停止(0=不停止)"
+    }
+  }
+}
